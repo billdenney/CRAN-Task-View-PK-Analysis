@@ -1,67 +1,88 @@
-
 <CRANTaskView> 
 
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
-<maintainer> M. Suzette Blanchard</maintainer>
+<maintainer email="wdenney@humanpredictions.com">Bill Denney</maintainer>
+<version>2017-03-24</version>
+<url>https://cran.r-project.org/view=Pharmacokinetics</url>
 
 <info>      
-Analysis of pharmacokinetic data is concerned with defining the relationship between the 
-dosing regimen and the body's exposure to drug as indicated by the concentration time curve 
-to determine a dose. Base R contains nls() package which determine the nonlinear least-squares 
-estimates of the nonlinear model parameters and return a class 'nls' object.
-It has methods for the generic functions 'coef', 'formula', 'resid', 'print',
-'summary', 'AIC', 'fitted' and 'vcov'.
 
-Once that is achieved, the interest shifts to determining if exposure differs among 
-subpopulations based on subject specific covariates (age, size, concomitant medications, 
-kidney function) requiring a change in dose. The  non-linear mixed models framework provides 
-a natural tool for analyzing PK data, using either frequentist (Beal  \& Sheiner,  1982,  
-Davidian \&  Giltinan,  1995; Lindstrom  \& Bates,  1990;  Sheiner,  Rosenberg,  \&  Melmon,  
-1975),  or  Bayesian estimation methods  (Wakefield,  1996a;   Lunn,  Wakefield,  Thomas,  
-Best,  \& Spiegelhalter, 1999).  Within the field of pharmacokinetics, analyses combining data 
-from multiple individuals to estimate the population parameters are termed 
-population PK.
+Analysis of pharmacokinetic data is concerned with defining the
+relationship between the dosing regimen and the body's exposure to
+drug as indicated by the concentration time curve to determine a
+dose. Base R contains nls() package which determine the nonlinear
+least-squares estimates of the nonlinear model parameters and return a
+class 'nls' object.  It has methods for the generic functions 'coef',
+'formula', 'resid', 'print', 'summary', 'AIC', 'fitted' and 'vcov'.
 
-The library nlme fits a nonlinear mixed-effects model using the frequentist approach described in 
-Lindstrom and Bates (1990) but allowing for nested random effects. The within-group errors 
-are allowed to be correlated and/or have unequal variances.  An object of class 'nlme' 
-representing the nonlinear mixed-effects model fit. Generic functions such as 'print', 'plot' 
-and 'summary' have methods to show the results of the fit. See 'nlmeObject' for the components 
-of the fit. The functions 'resid', 'coef', 'fitted', 'fixed.effects', and 'random.effects'  
-can be used to extract some of its components. 
+Once that is achieved, the interest shifts to determining if exposure
+differs among subpopulations based on subject specific covariates
+(age, size, concomitant medications, kidney function) requiring a
+change in dose. The non-linear mixed models framework provides a
+natural tool for analyzing PK data, using either frequentist (Beal \&
+Sheiner, 1982, Davidian \& Giltinan, 1995; Lindstrom \& Bates, 1990;
+Sheiner, Rosenberg, \& Melmon, 1975), or Bayesian estimation methods
+(Wakefield, 1996a; Lunn, Wakefield, Thomas, Best, \& Spiegelhalter,
+1999).  Within the field of pharmacokinetics, analyses combining data
+from multiple individuals to estimate the population parameters are
+termed population PK.
 
-The library nlmeODE combines the 'odesolve' and 'nlme' packages for mixed-effects modelling and 
-includes the library of PK/PD models.
+The library nlme fits a nonlinear mixed-effects model using the
+frequentist approach described in Lindstrom and Bates (1990) but
+allowing for nested random effects. The within-group errors are
+allowed to be correlated and/or have unequal variances.  An object of
+class 'nlme' representing the nonlinear mixed-effects model
+fit. Generic functions such as 'print', 'plot' and 'summary' have
+methods to show the results of the fit. See 'nlmeObject' for the
+components of the fit. The functions 'resid', 'coef', 'fitted',
+'fixed.effects', and 'random.effects' can be used to extract some of
+its components.
 
-Bayesian estimation methods for panel data are also available. These methods have been described 
-in the Cran Task view for Bayesian Inference.
+The library nlmeODE combines the 'odesolve' and 'nlme' packages for
+mixed-effects modelling and includes the library of PK/PD models.
 
-The PKtools library provides an interface for analysis of single dose population PK data to 
-NLME, NONMEM, and WinBUGS. This interface facilitates the use of hybrid likelihood-based and 
-Bayesian methods in analyses. Other PKtools functions include: AICcomp which prints the AIC, AIC$_c$ 
-(small sample AIC) and the log likelihood from NONMEM and NLME for each of a number of models;
-paramEst and indEst which print the population and individual parameter estimates,
-respectively, based on maximum likelihood (NONMEM), generalized least squares (NLME)
-and Bayesian estimates using MCMC (WinBUGS); HTMLtools and tex, respectively, output HTML
-and Latex/MikTex report files of  population and individual estimates and diagnostic plots for the users
-choice of estimation method. In addition, the diagnostic plots presented in the HTMLtools
-and tex files can be individually produced.
+Bayesian estimation methods for panel data are also available. These
+methods have been described in the Cran Task view for Bayesian
+Inference.
 
-The lattice library provides trellis plots comely used with panel data.
-<info/>
+The PKtools library provides an interface for analysis of single dose
+population PK data to NLME, NONMEM, and WinBUGS. This interface
+facilitates the use of hybrid likelihood-based and Bayesian methods in
+analyses. Other PKtools functions include: AICcomp which prints the
+AIC, AIC$_c$ (small sample AIC) and the log likelihood from NONMEM and
+NLME for each of a number of models; paramEst and indEst which print
+the population and individual parameter estimates, respectively, based
+on maximum likelihood (NONMEM), generalized least squares (NLME) and
+Bayesian estimates using MCMC (WinBUGS); HTMLtools and tex,
+respectively, output HTML and Latex/MikTex report files of population
+and individual estimates and diagnostic plots for the users choice of
+estimation method. In addition, the diagnostic plots presented in the
+HTMLtools and tex files can be individually produced.
+
+</info>
 
 <packagelist>
-<pck>nlme</pck>
-<pck>nlmeODE</pck>
-<pck>nls</pck>
-<pck>PKtools</pck>
-<pck>lattice</pck>
+<pck>cpk</pck>
+<pck>dfpk</pck>
+<pck>mrgsolve</pck>
+<pck>ncappc</pck>
+<pck>ncar</pck>
+<pck>nmw</pck>
+<pck>NonCompart</pck>
+<pck>PK</pck>
+<pck>PKgraph</pck>
+<pck>PKNCA</pck>
+<pck>PKPDmodels</pck>
+<pck>pkr</pck>
+<pck>PKreport</pck>
+<pck>scaRabee</pck>
 <packagelist/>
 
 <links>
-<a href="http://www1.imperial.ac.uk/medicine/research/researchthemes/publicandint/eph/bugs/pkbugs.html"</a>
-<a href="http://www.mrc-bsu.cam.ac.uk/bugs/winbugs/contents.shtml"</a>
-<a href="http://c255.ucsf.edu/nonmem0.html"</a>
+<a href="https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-pkbugs/">PKBugs</a>
+<a href="http://winbugs-development.mrc-bsu.cam.ac.uk/">WinBUGS</a>
+<a href="http://www.iconplc.com/innovation/nonmem/">NONMEM</a>
+<a href="http://mc-stan.org/">STAN</a>
 </links>
 </CRANTaskView>
