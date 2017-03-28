@@ -4,7 +4,7 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="wdenney@humanpredictions.com">Bill Denney</maintainer>
-<version>2017-03-27</version>
+<version>2017-03-28</version>
 <url>https://cran.r-project.org/view=Pharmacokinetics</url>
 
 <info>      
@@ -23,11 +23,10 @@ many samples per subject on the same and sequential days.
 
 The NCA packages are:
 <dl>
-  <dt>ncappc</dt>
-  <dt>NonCompart</dt>
-  <dt>PK</dt>
-  <dt>PKNCA</dt>
-  <dt>pkr</dt>
+  <dt>ncappc</dt><dd>Performs traditional NCA and simulation-based posterior predictive checks for a population PK model using NCA metrics.  It targets summarizing data from model-fit or simulated sources.</dd>
+  <dt>NonCompart</dt><dd>Provides basic computational functions for NCA.</dd>
+  <dt>PK</dt><dd>Calculates basic NCA parameters.</dd>
+  <dt>PKNCA</dt><dd>Computes standard NCA parameters and summarizes them with the goal of taking in observed clinical data and providing summaries ready for study reports and regulatory submission.</dd>
 </dl>
 
 Modeling of PK data typically uses compartmental methods which assume
@@ -39,11 +38,13 @@ be used for PK data.
 
 The PK modeling and simulation packages are:
 <dl>
-  <dt>cpk</dt>
-  <dt>dfpk</dt>
-  <dt>metrumrg</dt>
-  <dt>PKPDmodels</dt>
-  <dt>scaRabee</dt>
+  <dt>cpk</dt><dd>Provides simplified clinical pharmacokinetic functions for dose regimen design and modification at the point-of-care.</dd>
+  <dt>dfpk</dt><dd>Provides statistical methods involving PK measures for dose finding in Phase 1 clinical trials.</dd>
+  <dt>mrgsolve</dt><dd>Facilitates simulation from hierarchical, ordinary differential equation (ODE) based models typically employed in drug development.</dd>
+  <dt>nmw</dt><dd>Is a package to understand the algorithms of NONMEM.</dd>
+  <dt>PKgraph</dt><dd>Provides a graphical user interface for population pharmacokinetic model diagnosis from a variety of modeling fitting software, including NONMEM, Monolix, SAS, and R.</dd>
+  <dt>PKPDmodels</dt><dd>Provides functions to evaluate common pharmacokinetic/pharmacodynamic models and their gradients.</dd>
+  <dt>scaRabee</dt><dd>Provides a framework for simulation and optimization of pharmacokinetic-pharmacodynamic models at the individual and population level.</dd>
 </dl>
 
 Communication of results is as important (or more important) than
@@ -52,9 +53,9 @@ rmarkdown and knitr for general reporting, the features of packages
 which are important for reporting PK data are:
 
 <dl>
-  <dt>ncar</dt>
-  <dt>PKgraph</dt>
-  <dt>PKreport</dt>
+  <dt>ncar</dt><dd>Provides NCA for a report writer generating rtf and pdf output.</dd>
+  <dt>pkr</dt><dd>Generates NCA data sets compliant to CDISC and other pharmacokinetic functions for reviewer.</dd>
+  <dt>PKreport</dt><dd>Provides automatic pipeline for users to visualize data and models with an archive-oriented management tool for users to store, retrieve and modify figures and graph generation based on lattice and ggplot2.</dd>
 </dl>
 
 </info>
