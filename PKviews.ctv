@@ -25,7 +25,7 @@ The NCA packages are:
 <dl>
   <dt>ncappc</dt><dd>Performs traditional NCA and simulation-based posterior predictive checks for a population PK model using NCA metrics.  It targets summarizing data from model-fit or simulated sources.</dd>
   <dt>NonCompart</dt><dd>Provides basic computational functions for NCA.</dd>
-  <dt>PK</dt><dd>Calculates basic NCA parameters.</dd>
+  <dt>PK</dt><dd>Allows estimation of pharmacokinetic parameters using non-compartmental theory. Both complete sampling and sparse sampling designs are implemented. The package provides methods for hypothesis testing and confidence intervals related to superiority and equivalence.</dd>
   <dt>PKNCA</dt><dd>Computes standard NCA parameters and summarizes them with the goal of taking in observed clinical data and providing summaries ready for study reports and regulatory submission.</dd>
 </dl>
 
