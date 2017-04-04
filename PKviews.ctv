@@ -4,7 +4,7 @@
 <name>Pharmacokinetics</name>
 <topic>Analysis of Pharmacokinetic Data</topic>
 <maintainer email="wdenney@humanpredictions.com">Bill Denney</maintainer>
-<version>2017-03-28</version>
+<version>2017-04-04</version>
 <url>https://cran.r-project.org/view=Pharmacokinetics</url>
 
 <info>      
@@ -75,7 +75,7 @@ which are important for reporting PK data are:
 <pck>pkr</pck>
 <pck>PKreport</pck>
 <pck>scaRabee</pck>
-<packagelist/>
+</packagelist>
 
 <links>
 <a href="https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-pkbugs/">PKBugs</a>
